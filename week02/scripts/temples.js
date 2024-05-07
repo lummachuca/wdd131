@@ -1,17 +1,16 @@
 document.getElementById("currentyear").innerHTML = new Date(document.lastModified)
 
-// script.js
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const menu = document.querySelector('.menu');
+// making variables
+const hamburguer = document.querySelector('.hamburguer');
 
-hamburgerMenu.addEventListener('click', () => {
-  menu.classList.toggle('show');
-});
+hamburguer.onclick = function () {
+  navBar = document.querySelector(".navbar");
+  navBar.classList.toggle("active");
+}
 
-// Optional: Close menu when a menu item is clicked
-const menuItems = document.querySelectorAll('.menu li');
-menuItems.forEach(item => {
-  item.addEventListener('click', () => {
-    menu.classList.remove('show');
-  });
+// function to use the hamburguer
+hamburguer.addEventListener('click', () => {
+  hamburguer.classList.toggle('active');
+  nav_menu.classList.toggle('active');
+
 });
