@@ -21,8 +21,9 @@
   }
 
   .fa-solid {
-    margin: 0;
+    margin: 0px;
     display: none;
+    opacity: 0;
   }
 
   main .container {
