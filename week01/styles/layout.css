@@ -1,0 +1,73 @@
+body {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primarycolor: #311e10;
+  --secundarycolor: #dd6031;
+  --thirdcolor: #EABE7C;
+  --fourthcolor: #D9DD92;
+  --fifthcolor: #ECE4B7;
+}
+
+header {
+  color: var(--fifthcolor);
+  background-color: var(--primarycolor);
+}
+
+h1 {
+  padding: 2rem;
+}
+
+nav {
+  background-color: var(--thirdcolor);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav a {
+  color: var(--primarycolor);
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  height: 65.3vh;
+  grid-template-columns: 1fr minmax(150px, 20%);
+}
+
+main {
+  background-color: var(--secundarycolor);
+  color: var(--fifthcolor);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+aside {
+  background-color: var(--fourthcolor);
+  color: var(--primarycolor);
+  grid-column: 2/3;
+  grid-row: 1/2;
+  height: 100%;
+}
+
+footer {
+  background-color: var(--thirdcolor);
+  color: var(--primarycolor);
+  padding: 1rem;
+  text-align: center;
+}
