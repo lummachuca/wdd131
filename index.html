@@ -10,59 +10,79 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <script src="scripts/getdates.js"></script>
   <header>
     <h1>WDD 131: Dynamic Web Fundamentals by Lourdes Mariana Machuca</h1>
     <nav>
-      <a href="https://www.linkedin.com/in/lourdesmmachuca/">Linkedln</a>
-      <a href="https://byui.instructure.com/">I-Learn</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-      <a href="#Project">Final Project</a>
+      <a href="https://www.linkedin.com/in/lourdesmmachuca/" target="_blank">Linkedln</a>
+      <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+      <a href="#Project" target="_blank">Final Project</a>
     </nav>
   </header>
 
   <main>
-    <section class="card">
-      <img src="images/me.jpg" alt="Me" style="width: 450px;">
-      <p>My name is Lourdes and I go by Luz. I was born in Argentina and live my family in Buenos Aires West. I'm
-        currently working as atechnician support in Life Wireless as a freelancer. I'm married since the 2022 with my
-        best
-        friend. I love reading books and spending time with my family and friends. I love to learn new things and know
-        new
-        point of views. </p>
-      <figure>
-        <img src="images/ArgentinaFlag.svg" alt="Argentina" style="width: 300px">
-        <figcaption>Official Flag of Argentina</figcaption>
-      </figure>
-      <p>Argentina is the 8th largest country in the world and is located in Southern of South America.
-        To the east of the Andes, the interior of the country is flat, fertile grassland. This area, called the Pampas,
-        is
-        the
-        agricultural heartland of Argentina.Northeast Argentina features rainforests and Iguazu Falls. Altogether, the
-        country
-        is divided into four regions, the Andes, the Pampas, the north and Patagonia, which covers the southern part of
-        the
-        country. Argentina is rich in culture, when you arrived them you will see many people drinking mate and saying
-        funny and
-        incredibles slangs. </p>
-    </section>
-    <section class="card">
-      <h1>Web Dev Resources</h1>
-      <a href="#">Dev.to Community</a>
-      <a href="#">Smashing Magazine</a>
-      <a href="#">CSS tricks</a>
-      <a href="#">W3 Schools</a>
-      <a href="#">Udemy</a>
-      <a href="#">Lorem Picsum Image Placeholder</a>
-    </section>
+    <div class="container">
+
+      <section class="card1">
+        <h2>About me</h2>
+        <figure class="myphoto">
+          <img src="images/me.jpeg" alt="Me" style="width: 250px; height: auto;">
+        </figure>
+        <p>My name is Lourdes and I go by Luz. I was born in
+          Argentina and live my family in Buenos Aires West.
+          I'm currently working as atechnician support in
+          Life Wireless as a freelancer. I'm married since the 2022 with
+          my best friend. I love reading books and spending
+          time with my family and friends. I love to learn new things
+          and know new point of views.
+        </p>
+      </section>
+
+      <section class="card2">
+        <h2>Web Dev Resources</h2>
+        <ul>
+          <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank">CSS tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com/pt/" target="_blank">Udemy</a></li>
+          <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+      </section>
+
+      <section class="card3">
+        <h3>Argentina, Buenos Aires</h3>
+        <figure class="flag">
+          <img src="images/ArgentinaFlag.svg" alt="Argentina" style="width: 260px; height: auto;">
+          <figcaption>Official Flag of Argentina</figcaption>
+        </figure>
+        <p>Argentina is the 8th largest country in the world and is located
+          in Southern of South America.
+          To the east of the Andes, the interior of the country is flat,
+          fertile grassland. This area, called the
+          Pampas, is the agricultural heartland of Argentina.Northeast
+          Argentina features rainforests and Iguazu Falls.
+          Altogether, the country
+          is divided into four regions, the Andes, the Pampas, the north
+          and Patagonia, which covers the southern part
+          of the country. Argentina is rich in culture, when you arrived
+          them you will see many people drinking mate and saying
+          funny and incredibles slangs.
+        </p>
+      </section>
+
+    </div>
+
   </main>
 
   <footer>
-    <p>&copy;<span id="currentyear"></span> - Lourdes Mariana Machuca, Argentina</p>
-
-    <p>Last Modification: lastModified</p>
+    <p>&copy;<span id="currentyear" defer></span> - Lourdes Mariana Machuca, Argentina</p>
+    <p>Last Modification: </p>
   </footer>
 
 </body>
