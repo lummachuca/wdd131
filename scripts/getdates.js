@@ -1,3 +1,1 @@
-const currentyear = document.querySelector("#currentyear");
-
-currentyear.innerHTML = currentyear.getFullYear();
+document.getElementById("lastModified").innerHTML = new Date(document.lastModified)
