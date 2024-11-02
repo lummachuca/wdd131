@@ -1,0 +1,34 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primarycolor: #311e10;
+  --secundarycolor: #dd6031;
+  --thirdcolor: #EABE7C;
+  --fourthcolor: #D9DD92;
+  --fifthcolor: #ECE4B7;
+}
+
+header {
+  background-color: var(--secundarycolor);
+}
+
+h1 {
+  font-weight: 200;
+  color:var(--fifthcolor);
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+}
