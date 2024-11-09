@@ -10,7 +10,7 @@ body {
 }
 
 :root {
-  --primarycolor: #6290C3;
+  --primarycolor: #3855B7;
   --secundarycolor: #C2E7DA;
   --thirdcolor: #F1FFE7;
   --fourthcolor: #f9f9f9;
@@ -85,6 +85,7 @@ main {
   display: flex;
   text-align: justify;
   padding: 3rem;
+  font-weight: bolder;
 }
 
 .card2 {
@@ -140,6 +141,7 @@ h2 {
 .card3 p {
   margin: 1rem;
   padding: 1rem;
+  font-weight: bolder;
 }
 
 footer {
