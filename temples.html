@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>W02 Assignment: Picture Album | Lourdes Machuca</title>
+
+  <meta name="description"
+    content="This assignment applies the concepts presented in the learning activities to a picture album page that is responsive in small and larger views. This page will utilize a 'hamburger' menu and respond to user requests.">
+  <meta name="author" content="Lourdes Machuca"/>
+
+  <link href="week02/styles/temples.css" rel="stylesheet"/>
+  <link href="week02/styles/temples-large.css" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/8ca545acd2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <div class="hamburguer">
+      <i class="fa-solid fa-bars"></i>
+      <h1>Temple album</h1>
+    </div>
+    <nav class="navbar">
+      <ul id="nav-menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Old</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Large</a></li>
+        <li><a href="">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <div class="container">
+      <figure>
+        <img src="week02/images/buenosaires.jpeg" alt="Buenos Aires Argentina">
+        <figcaption>Buenos Aires Argentina</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/cordoba.jpeg" alt="Cordoba Argentina Temple">
+        <figcaption>Cordoba Argentina</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/curitiba.jpeg" alt="Curitiba Brazil Temple">
+        <figcaption>Curitiba Brazil</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/ft_lauderdale.jpeg" alt="Fort Lauderdale Florida Temple">
+        <figcaption>Fort Lauderdale</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/gila_valley.jpeg" alt="The Gila Valley Arizona Temple">
+        <figcaption>The Gila Valley</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/nashville.jpeg" alt="Nashville Tennessee Temple">
+        <figcaption>Nashville Tennessee</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/rexburg.jpeg" alt="Rexburg Idaho Temple">
+        <figcaption>Rexburg Idaho</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/seattle.jpeg" alt="Seattle Washington Temple">
+        <figcaption>Seattle Washington</figcaption>
+      </figure>
+      <figure>
+        <img src="week02/images/st_george.jpeg" alt="St. George Utah Temple">
+        <figcaption>St. George</figcaption>
+      </figure>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>Last modification:</p>
+    <p><span id="currentyear"></span></p>
+    <p> <span id="lastModified"></span></p>
+    <p>🧉 Lourdes Machuca 🧉 Argentina</p>
+  </footer>
+
+  <script src="week02/scripts/temples.js"></script>
+
+</body>
+</html>
