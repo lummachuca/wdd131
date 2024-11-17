@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,36 +12,40 @@ body {
 }
 
 header {
-  background-color: rgb(189, 110, 21);
-  padding: 20px;
-  box-shadow: 0px 3px 10px black;
-}
-
-header h1 {
-  color: rgb(246, 232, 219);
-  font-weight: 400;
-  font-size: 25px;
-}
-
-header .hamburguer {
-  display: flex;
-  gap: 180px;
-}
-
-header .fa-solid {
-  color: rgb(246, 232, 219);
-  font-size: 35px;
-}
-
-header .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  height: 0;
-  transition: 0.5s;
+  padding: 1rem 0 1rem 1rem;
+  background-color: rgb(189, 110, 21);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.555);
 }
 
-header .navbar.active {
-  height: 200px;
+header p {
+  color: rgb(246, 232, 219);
+  font-size: 20px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.fa-solid {
+  color: rgb(246, 232, 219);
+  font-size: 35px;
+  margin-right: .5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar {
+  height: 0;
+  transition: 0.5s;
+  width: 100%;
+  text-align: end;
+}
+
+.navbar.active {
+  height: 210px;
 }
 
 .navbar.active ul {
@@ -48,60 +53,71 @@ header .navbar.active {
   color: #C1B8C8;
 }
 
-.navbar ul {
-  /* we use this opacity to delete the list of li */
+ul {
+  /* we use this 
+  opacity to delete 
+  the list of li */
   opacity: 0;
+  width: 100%;
 }
 
-header ul li {
+li {
   list-style: none;
-  padding-top: 5px;
   transition: 0.5s;
+  margin: .6rem;
 }
 
-header ul a {
+
+a {
   text-decoration: none;
   color: rgb(246, 232, 219);
-  display: flex;
-  margin-top: 10px;
-  transition: 0.5s;
+  transition: .5s;
+  text-align: end;
+  cursor: pointer;
 }
 
-header ul a:hover {
-  color: #9BA0BC;
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-header ul a:active {
+a:active {
   color: #C1B8C8;
 }
 
-main h2 {
+h1 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  color:rgb(96, 56, 12)
+  color: rgb(96, 56, 12)
 }
 
-main figure {
-  padding: 30px
+figure {
+  padding: 30px;
+  cursor: pointer;
 }
 
-main figure img {
+figure img {
   width: 100%;
   height: auto;
-  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.449)
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.449);
+  transition: .5s;
 }
 
-main figure figcaption {
+img:hover{
+  filter: sepia(.5);
+  transition: .5s;
+}
+
+figure figcaption {
   display: flex;
   justify-content: center;
   font-size: 18px;
 }
 
-
 footer {
+  padding: 1rem;
   background-color: rgb(189, 110, 21);
   color: beige;
-  padding: 30px;
   text-align: center;
 }
