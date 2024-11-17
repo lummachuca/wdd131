@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #221D23;
+  --secundary: #f9f3ed;
+  --nav-foot: #4F3824;
+  --hover-secundary:#DDB967;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(249, 243, 237);
+  background-color: var(--secundary);
 }
 
 header {
@@ -17,24 +24,24 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0 1rem 1rem;
-  background-color: rgb(189, 110, 21);
+  background-color: var(--nav-foot);
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.555);
 }
 
 header p {
-  color: rgb(246, 232, 219);
   font-size: 20px;
   width: 100%;
   align-items: center;
   display: flex;
+  color: var(--secundary);
 }
 
 .fa-solid {
-  color: rgb(246, 232, 219);
   font-size: 35px;
   margin-right: .5rem;
   cursor: pointer;
   display: none;
+  color: var(--secundary);
 }
 
 .navbar {
@@ -50,7 +57,6 @@ header p {
 
 .navbar.active ul {
   opacity: 1;
-  color: #C1B8C8;
 }
 
 ul {
@@ -70,27 +76,22 @@ li {
 
 a {
   text-decoration: none;
-  color: rgb(246, 232, 219);
+  color: var(--secundary);
   transition: .5s;
   text-align: end;
   cursor: pointer;
 }
 
 a:hover {
-  color: #ffffff;
+  color: var(--hover-secundary);
   text-decoration: underline;
 }
-
-a:active {
-  color: #C1B8C8;
-}
-
 
 h1 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  color: rgb(96, 56, 12)
+  color: var(--third);
 }
 
 figure {
@@ -105,7 +106,7 @@ figure img {
   transition: .5s;
 }
 
-img:hover{
+img:hover {
   filter: sepia(.5);
   transition: .5s;
 }
@@ -114,11 +115,12 @@ figure figcaption {
   display: flex;
   justify-content: center;
   font-size: 18px;
+  color: var(--primary);
 }
 
 footer {
   padding: 1rem;
-  background-color: rgb(189, 110, 21);
-  color: beige;
+  background-color: var(--nav-foot);
+  color: var(--secundary);
   text-align: center;
 }
